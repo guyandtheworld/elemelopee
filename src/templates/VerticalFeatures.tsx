@@ -1,30 +1,39 @@
-import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
+import Link from 'next/link';
+
 import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
-  <Section
-    title="Your title here"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
-  >
-    <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature.svg"
-      imageAlt="First feature alt text"
-    />
-    <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature2.svg"
-      imageAlt="Second feature alt text"
-      reverse
-    />
-    <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature3.svg"
-      imageAlt="Third feature alt text"
-    />
+  <Section>
+    <div className="grid grid-cols-2 gap-0">
+      <div className="col-span-1">
+        <img
+          src="/assets/images/model2.png"
+          alt="First feature alt text"
+          className="w-full h-full"
+        />
+      </div>
+      <div className="col-span-1 bg-pink-200 flex items-center justify-center">
+        <Link href="/collection">
+          <a className="text-lg font-bold text-4xl tracking-wide text-black">
+            Shop the Collection
+          </a>
+        </Link>
+      </div>
+    </div>
+    <div className="grid grid-cols-1 gap-0 relative">
+      <img
+        src="/assets/images/model1.jpeg"
+        alt="Second feature alt text"
+        className="w-full h-full"
+      />
+      <div className="absolute top-1/4 left-1/3 transform -translate-x-1/2 -translate-y-1/2">
+        <Link href="/house-dress">
+          <a className="text-6xl font-bold tracking-widest text-gray-300">
+            House Dress
+          </a>
+        </Link>
+      </div>
+    </div>
   </Section>
 );
 

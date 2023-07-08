@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { Background } from '../background/Background';
@@ -8,11 +7,11 @@ const Hero = () => (
   <Background color="bg-white-100">
     <nav className="flex justify-between items-center">
       <div></div>
-      <Image
-        src="/assets/images/tiger.svg" // replace "your-logo.svg" with your actual file name
-        alt="elemelopee" // replace "Your Company Name" with your actual company name
-        width={150} // adjust width as needed
-        height={150} // adjust height as needed
+      <img
+        src="/assets/images/tiger.svg"
+        alt="elemelopee"
+        width="150"
+        height="150"
       />
       <ul>
         <li>
@@ -38,13 +37,13 @@ const Hero = () => (
       </ul>
     </nav>
 
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="pt-20 pb-10">
       <div className="flex justify-center items-center mb-1">
-        <Image
+        <img
           src="/assets/images/hero.jpeg"
-          alt="Descriptive text"
-          width={800}
-          height={800}
+          alt="elemelopee"
+          width="1000"
+          height="1000"
         />
       </div>
 

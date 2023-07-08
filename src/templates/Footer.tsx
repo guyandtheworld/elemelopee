@@ -1,12 +1,8 @@
-import Link from 'next/link';
-
 import { Background } from '../background/Background';
-import { CenteredFooter } from '../footer/CenteredFooter';
-import { Section } from '../layout/Section';
 
 const Footer = () => (
   <Background color="bg-gray-100">
-    <Section>
+    {/* <Section>
       <CenteredFooter
         iconList={
           <>
@@ -89,7 +85,7 @@ const Footer = () => (
           </Link>
         </li>
       </CenteredFooter>
-    </Section>
+    </Section> */}
   </Background>
 );
 
